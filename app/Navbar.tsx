@@ -33,7 +33,7 @@
             <div className="flex justify-between items-center h-20">
             <Link href="/" className="flex items-center gap-3">
                 <Image
-                src="/assets/img/icon.png"
+                src="/img146.png"
                 alt="Sirikwa Dairies"
                 width={50}
                 height={50}
@@ -41,7 +41,7 @@
                 />
                 <span className="text-xl font-bold text-gray-800">
                 Sirikwa Dairies
-                <span className="block text-sm font-normal text-gray-600">Generations PLC</span>
+                <span className="block text-sm font-normal text-gray-600">PLC</span>
                 </span>
             </Link>
 
