@@ -86,7 +86,7 @@ export default function About() {
                 Through our unique hub model, we unite 20+ partners in providing:
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-4">
-                {['Dairy Inputs', 'AI Services', 'Veterinary Care', 'Financial Solutions'].map((service) => (
+                {['Dairy Inputs', 'Veterinary Care', 'Financial Solutions'].map((service) => (
                   <div key={service} className="flex items-center gap-2 p-3 bg-white rounded-lg">
                     <CheckCircle className="w-4 h-4 md:w-5 md:h-5 text-green-500" />
                     <span className="text-sm md:text-base">{service}</span>
