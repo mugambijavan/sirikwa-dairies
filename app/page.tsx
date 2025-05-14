@@ -4,7 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination } from 'swiper/modules';
-import { CheckCircle, MapPin, Phone, Mail, Clock, Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
+import { CheckCircle, MapPin} from 'lucide-react';
 import AOS from 'aos';
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -243,7 +243,7 @@ export default function Home() {
                   </div>
                   <div className="relative h-96" data-aos="fade-left">
                     <Image
-                      src="/img106.jpg"
+                      src="/img112.jpeg"
                       alt="Dairy Projects"
                       fill
                       className="object-cover rounded-xl"
@@ -280,7 +280,7 @@ export default function Home() {
                   </div>
                   <div className="relative h-96" data-aos="fade-left">
                     <Image
-                      src="/img106.jpg"
+                      src="/img109.jpg"
                       alt="Dairy Services"
                       fill
                       className="object-cover rounded-xl"
@@ -302,7 +302,7 @@ export default function Home() {
                   </div>
                   <div className="relative h-96" data-aos="fade-left">
                     <Image
-                      src="/img106.jpg"
+                      src="/img171.jpeg"
                       alt="Marketing Profile"
                       fill
                       className="object-cover rounded-xl"
@@ -354,148 +354,42 @@ export default function Home() {
       </section>
 
       {/* Footer Section */}
-      <footer className="bg-gradient-to-b from-blue-900 to-blue-800 text-white py-16 mt-24">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
-            {/* Company Info */}
-            <motion.div 
-              className="space-y-6"
-              data-aos="fade-up"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-            >
-              <div className="relative w-56 h-24 mb-6">
-                <Image
-                  src="/sirikwalogo.jpg"
-                  alt="Sirikwa Dairies Logo"
-                  fill
-                  className="object-contain"
-                />
-              </div>
-              <p className="text-gray-200 text-lg" style={{ fontFamily: 'Inter, sans-serif' }}>
-                Empowering farmers with quality dairy solutions since 2010.
-              </p>
-              <div className="flex items-center gap-3">
-                <MapPin className="w-6 h-6 text-blue-300" />
-                <span className="text-gray-200 text-lg" style={{ fontFamily: 'Inter, sans-serif' }}>
-                  Ziwa Town, Uasin Gishu County
-                </span>
-              </div>
-            </motion.div>
-
-            {/* Quick Links */}
-            <motion.div 
-              className="space-y-6"
-              data-aos="fade-up"
-              data-aos-delay="100"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-            >
-              <h3 className="text-3xl font-bold mb-4 border-b-2 border-blue-400 pb-3" style={{ fontFamily: 'Poppins, sans-serif' }}>
-                Quick Links
-              </h3>
-              <nav className="flex flex-col space-y-3">
-                {['About Us', 'Products & Services', 'Blog', 'Contact'].map((link, index) => (
-                  <motion.div key={index} whileHover={{ x: 5 }}>
-                    <Link 
-                      href={`/${link.toLowerCase().replace(' & ', '-')}`} 
-                      className="text-gray-200 hover:text-blue-300 text-lg transition" 
-                      style={{ fontFamily: 'Inter, sans-serif' }}
-                    >
-                      {link}
-                    </Link>
-                  </motion.div>
-                ))}
-              </nav>
-            </motion.div>
-
-            {/* Contact Info */}
-            <motion.div 
-              className="space-y-6"
-              data-aos="fade-up"
-              data-aos-delay="150"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-            >
-              <h3 className="text-3xl font-bold mb-4 border-b-2 border-blue-400 pb-3" style={{ fontFamily: 'Poppins, sans-serif' }}>
-                Contact Us
-              </h3>
-              <div className="space-y-4">
-                <div className="flex items-center gap-3">
-                  <Phone className="w-6 h-6 text-blue-300" />
-                  <span className="text-gray-200 text-lg" style={{ fontFamily: 'Inter, sans-serif' }}>
-                    +254 712 345 678
-                  </span>
-                </div>
-                <div className="flex items-center gap-3">
-                  <Mail className="w-6 h-6 text-blue-300" />
-                  <span className="text-gray-200 text-lg" style={{ fontFamily: 'Inter, sans-serif' }}>
-                    info@sirikwadairies.co.ke
-                  </span>
-                </div>
-                <div className="flex items-center gap-3">
-                  <Clock className="w-6 h-6 text-blue-300" />
-                  <span className="text-gray-200 text-lg" style={{ fontFamily: 'Inter, sans-serif' }}>
-                    Mon-Fri: 8AM - 5PM
-                  </span>
-                </div>
-              </div>
-            </motion.div>
-
-            {/* Social Media */}
-            <motion.div 
-              className="space-y-6"
-              data-aos="fade-up"
-              data-aos-delay="200"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-            >
-              <h3 className="text-3xl font-bold mb-4 border-b-2 border-blue-400 pb-3" style={{ fontFamily: 'Poppins, sans-serif' }}>
-                Follow Us
-              </h3>
-              <div className="flex space-x-6">
-                {[Facebook, Twitter, Instagram, Linkedin].map((Icon, index) => (
-                  <motion.a 
-                    key={index} 
-                    href="#" 
-                    className="text-gray-200 hover:text-blue-300 transition"
-                    whileHover={{ scale: 1.2 }}
-                  >
-                    <Icon className="w-8 h-8" />
-                  </motion.a>
-                ))}
-              </div>
-              <div className="aspect-video bg-gray-800 rounded-xl overflow-hidden shadow-lg">
-                <iframe 
-                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1994.6972298652904!2d35.2197!3d0.835173!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x89dd23bbc633580d!2sSirikwa%20Dairies!5e0!3m2!1sen!2ske!4v1655130368691!5m2!1sen!2ske"
-                  className="w-full h-full"
-                  loading="lazy"
-                />
-              </div>
-            </motion.div>
+      <footer className="bg-white text-gray-800 py-8 mt-12 border-t border-gray-200">
+          <div className="container mx-auto px-4">
+              {/* Copyright */}
+              <motion.div 
+                  className="border-t border-gray-200 mt-8 pt-6 flex flex-col items-center"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ duration: 0.8, delay: 0.4 }}
+              >
+                  <div className="relative w-48 h-20 mb-4">
+                      <Image
+                          src="/sirikwalogo.jpg"
+                          alt="Sirikwa Dairies Logo"
+                          fill
+                          className="object-contain"
+                      />
+                  </div>
+                  <p className="text-gray-600 text-sm text-center" style={{ fontFamily: 'Inter, sans-serif' }}>
+                      Empowering farmers with quality dairy solutions since 2010.
+                  </p>
+                  <div className="flex items-center gap-2">
+                      <MapPin className="w-5 h-5 text-blue-600" />
+                      <span className="text-gray-600 text-sm" style={{ fontFamily: 'Inter, sans-serif' }}>
+                          Ziwa Town, Uasin Gishu County
+                      </span>
+                  </div>
+                  <p className="text-gray-500 text-sm text-center" style={{ fontFamily: 'Inter, sans-serif' }}>
+                      © {new Date().getFullYear()} Sirikwa Dairies & Gen PLC. All rights reserved.
+                  </p>
+                  <p className="text-gray-500 text-sm mt-1 text-center" style={{ fontFamily: 'Inter, sans-serif' }}>
+                      Developed by <a href="https://bhakitah.co.ke" target="_blank" rel="noopener" className="hover:text-blue-600 transition">
+                          BhakitahTech
+                      </a>
+                  </p>
+              </motion.div>
           </div>
-
-          {/* Copyright */}
-          <motion.div 
-            className="border-t border-blue-700 mt-12 pt-8 text-center"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
-          >
-            <p className="text-gray-300 text-lg" style={{ fontFamily: 'Inter, sans-serif' }}>
-              © {new Date().getFullYear()} Sirikwa Dairies & Gen PLC. All rights reserved.
-            </p>
-            <p className="text-gray-300 text-lg mt-3" style={{ fontFamily: 'Inter, sans-serif' }}>
-              Developed by <a href="https://bhakitah.co.ke" target="_blank" rel="noopener" className="hover:text-blue-300 transition">
-                BhakitahTech
-              </a>
-            </p>
-          </motion.div>
-        </div>
       </footer>
     </main>
   );
