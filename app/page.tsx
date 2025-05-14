@@ -62,52 +62,57 @@ export default function Home() {
         </div>
 
         {/* Foreground Content */}
-        <div className="relative z-10 h-full flex items-center">
-          <div className="container text-center text-white">
-            <motion.h1 
-              className="text-5xl md:text-7xl font-extrabold mb-6 drop-shadow-[0_6px_6px_rgba(0,0,0,0.7)]"
-              style={{ fontFamily: 'Poppins, sans-serif' }}
-              data-aos="zoom-in"
-              data-aos-delay="200"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-            >
-              Welcome to <span className="text-blue-300">Sirikwa Dairies</span>
-            </motion.h1>
-            <motion.p 
-              className="text-2xl md:text-3xl mb-8 max-w-3xl mx-auto text-gray-100"
-              style={{ fontFamily: 'Inter, sans-serif' }}
-              data-aos="fade-up"
-              data-aos-delay="400"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-            >
-              Empowering Dairy Farmers with Innovation and Excellence
-            </motion.p>
-            <motion.div
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              <Link 
-                href="/about" 
-                className="inline-block bg-blue-500 hover:bg-blue-600 px-10 py-4 rounded-xl text-lg font-semibold transform transition-all duration-300 shadow-lg"
-                data-aos="zoom-in"
-                data-aos-delay="600"
-              >
-                Explore Our Journey
-              </Link>
-            </motion.div>
-          </div>
-        </div>
+        {/* Foreground Content */}
+  <div className="relative z-10 h-full flex items-center justify-center">
+    <div className="container mx-auto px-4">
+      <motion.div 
+        className="flex flex-col items-center justify-center text-center"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+      >
+        <motion.h1 
+          className="text-6xl md:text-8xl font-bold mb-6 tracking-tighter"
+          style={{ 
+            fontFamily: 'Playfair Display, serif',
+            textShadow: '0 4px 12px rgba(0,0,0,0.5)'
+          }}
+          initial={{ y: 40, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+        >
+          Welcome to <span className="text-blue-400 bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">Sirikwa Dairies</span>
+        </motion.h1>
 
-        {/* Pagination */}
-        <div className="absolute bottom-10 left-0 right-0 z-20">
-          <div className="container flex justify-center">
-            <div className="swiper-pagination !relative !bottom-0" />
-          </div>
-        </div>
+        <motion.p 
+          className="text-2xl md:text-4xl mb-10 max-w-4xl mx-auto leading-relaxed"
+          style={{ 
+            fontFamily: 'Montserrat, sans-serif',
+            fontWeight: 300,
+            color: '#f0f9ff'
+          }}
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.4 }}
+        >
+          Empowering Dairy Farmers with Innovation and Excellence
+        </motion.p>
+
+        <motion.div
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+          transition={{ type: 'spring', stiffness: 300 }}
+        >
+          <Link 
+            href="/about" 
+            className="inline-block bg-gradient-to-br from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600 px-12 py-5 rounded-2xl text-xl font-semibold tracking-wide transform transition-all duration-300 shadow-xl hover:shadow-2xl"
+          >
+            Explore Our Journey
+          </Link>
+        </motion.div>
+      </motion.div>
+    </div>
+  </div>
       </section>
 
       {/* Core Values Section */}
