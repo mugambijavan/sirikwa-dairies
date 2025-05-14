@@ -4,12 +4,13 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination } from 'swiper/modules';
-import { CheckCircle, MapPin} from 'lucide-react';
+import { CheckCircle} from 'lucide-react';
 import AOS from 'aos';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'aos/dist/aos.css';
 import { motion } from 'framer-motion';
+import { FaLeaf, FaTractor } from 'react-icons/fa';
 
 export default function Home() {
   const [activeTab, setActiveTab] = useState(1);
@@ -353,44 +354,50 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Footer Section */}
-      <footer className="bg-white text-gray-800 py-8 mt-12 border-t border-gray-200">
-          <div className="container mx-auto px-4">
-              {/* Copyright */}
-              <motion.div 
-                  className="border-t border-gray-200 mt-8 pt-6 flex flex-col items-center"
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  transition={{ duration: 0.8, delay: 0.4 }}
-              >
-                  <div className="relative w-48 h-20 mb-4">
-                      <Image
-                          src="/sirikwalogo.jpg"
-                          alt="Sirikwa Dairies Logo"
-                          fill
-                          className="object-contain"
-                      />
-                  </div>
-                  <p className="text-gray-600 text-sm text-center" style={{ fontFamily: 'Inter, sans-serif' }}>
-                      Empowering farmers with quality dairy solutions since 2010.
-                  </p>
-                  <div className="flex items-center gap-2">
-                      <MapPin className="w-5 h-5 text-blue-600" />
-                      <span className="text-gray-600 text-sm" style={{ fontFamily: 'Inter, sans-serif' }}>
-                          Ziwa Town, Uasin Gishu County
-                      </span>
-                  </div>
-                  <p className="text-gray-500 text-sm text-center" style={{ fontFamily: 'Inter, sans-serif' }}>
-                      © {new Date().getFullYear()} Sirikwa Dairies & Gen PLC. All rights reserved.
-                  </p>
-                  <p className="text-gray-500 text-sm mt-1 text-center" style={{ fontFamily: 'Inter, sans-serif' }}>
-                      Developed by <a href="https://bhakitah.co.ke" target="_blank" rel="noopener" className="hover:text-blue-600 transition">
-                          BhakitahTech
-                      </a>
-                  </p>
-              </motion.div>
-          </div>
-      </footer>
+          {/* Footer Section */}
+                      <footer className="relative bg-[#ffffff] text-[#2c3e50] py-8 mt-12 border-t border-gray-200">
+                        {/* Background Icons */}
+                        <div className="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none">
+                          <FaLeaf className="text-6xl absolute top-10 left-10" />
+                          <FaTractor className="text-6xl absolute bottom-10 right-10" />
+                        </div>
+          
+                        <div className="container mx-auto px-4">
+                          <div className="flex flex-col items-center">
+                            {/* Logo with Animation */}
+                            <motion.div
+                              initial={{ opacity: 0, y: 20 }}
+                              animate={{ opacity: 1, y: 0 }}
+                              transition={{ duration: 0.5 }}
+                              className="mb-4"
+                            >
+                              <Image
+                                src="/sirikwalogo.jpg"
+                                alt="Sirikwa Dairies Logo"
+                                width={192}
+                                height={80}
+                                className="object-contain"
+                              />
+                            </motion.div>
+          
+                            {/* Description */}
+                            <p className="text-center text-sm mb-4" style={{ fontFamily: 'Open Sans, sans-serif' }}>
+                              Empowering farmers with quality dairy solutions since 2010.
+                            </p>
+          
+                            {/* Copyright */}
+                            <p className="text-center text-sm" style={{ fontFamily: 'Open Sans, sans-serif' }}>
+                              © {new Date().getFullYear()} Sirikwa Dairies & Gen PLC. All rights reserved.
+                            </p>
+                            <p className="text-center text-sm mt-2" style={{ fontFamily: 'Open Sans, sans-serif' }}>
+                              Developed by{' '}
+                              <a href="https://bhakitah.co.ke" target="_blank" rel="noopener" className="text-[#2c3e50] hover:text-[#8bc34a] transition">
+                                BhakitahTech
+                              </a>
+                            </p>
+                          </div>
+                        </div>
+                      </footer>
     </main>
   );
 }
