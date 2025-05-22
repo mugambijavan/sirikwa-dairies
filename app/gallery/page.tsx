@@ -111,8 +111,10 @@ export default function Gallery() {
   return (
     <main className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative h-96 bg-gradient-to-r from-blue-50 to-indigo-50 flex items-center justify-center overflow-hidden">
-        <div className="container text-center relative z-10">
+       {/* Hero Section */}
+      <section className="relative h-64 sm:h-80 md:h-96 bg-blue-50 flex items-center">
+        <div className="absolute inset-0 bg-[url('/img119.jpeg')] bg-cover bg-center blur-sm" />
+        <div className="container text-center relative z-10" data-aos="fade-up">
           <h1 
             className="text-5xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent"
             data-aos="fade-up"
