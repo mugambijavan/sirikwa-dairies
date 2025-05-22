@@ -1,17 +1,47 @@
 'use client';
 
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import { FaLeaf, FaTractor} from 'react-icons/fa';
-
+import { FaLeaf, FaTractor } from 'react-icons/fa';
 
 export default function Contact() {
+  const [result, setResult] = useState("");
+  
   useEffect(() => {
     AOS.init({ duration: 1000, once: true });
   }, []);
+
+  const onSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    setResult("Sending....");
+    const formData = new FormData(event.target as HTMLFormElement);
+
+    formData.append("access_key", process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY || "");
+
+    const url = process.env.NEXT_PUBLIC_WEB3FORMS_URL;
+    if (!url) {
+      setResult("Form submission URL is not configured.");
+      return;
+    }
+
+    const response = await fetch(url, {
+      method: "POST",
+      body: formData
+    });
+
+    const data = await response.json();
+
+    if (data.success) {
+      setResult("Form Submitted Successfully");
+      (event.target as HTMLFormElement).reset();
+    } else {
+      console.log("Error", data);
+      setResult(data.message);
+    }
+  };
 
   return (
     <main>
@@ -30,34 +60,45 @@ export default function Contact() {
             {/* Contact Form */}
             <div className="bg-white p-8 rounded-xl shadow-md" data-aos="fade-right">
               <h2 className="text-2xl font-bold mb-6">Send us a Message</h2>
-              <form className="space-y-4">
+              <form onSubmit={onSubmit} className="space-y-4">
                 <div>
                   <input
                     type="text"
+                    name="name"
                     placeholder="Your Name"
                     className="w-full p-3 border rounded-lg"
+                    required
                   />
                 </div>
                 <div>
                   <input
                     type="email"
+                    name="email"
                     placeholder="Your Email"
                     className="w-full p-3 border rounded-lg"
+                    required
                   />
                 </div>
                 <div>
                   <textarea
+                    name="message"
                     placeholder="Your Message"
                     rows={4}
                     className="w-full p-3 border rounded-lg"
+                    required
                   ></textarea>
                 </div>
-                <button className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition">
+                <button 
+                  type="submit" 
+                  className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition"
+                >
                   Send Message
                 </button>
+                <span className="block mt-2 text-sm">{result}</span>
               </form>
             </div>
 
+          
             {/* Contact Info */}
             <div className="space-y-8" data-aos="fade-left">
               <div>
