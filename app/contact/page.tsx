@@ -113,10 +113,11 @@ export default function Contact() {
               <div className="aspect-video bg-gray-100 rounded-xl overflow-hidden">
                 {/* Google Map Embed */}
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=..."
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1994.6980866782656!2d35.22131!3d0.833483!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1781762cb36ea5a9%3A0x89dd23bbc633580d!2sSirikwa%20Dairies!5e0!3m2!1sen!2ske!4v1747940146637!5m2!1sen!2ske" 
                   className="w-full h-full"
                   loading="lazy"
                 ></iframe>
+                
               </div>
             </div>
           </div>
