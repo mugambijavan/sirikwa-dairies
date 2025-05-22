@@ -17,9 +17,9 @@ export default function About() {
   }, []);
 
   const sponsors = [
-    '/sponsors/img1.png', '/sponsors/img2.jpeg', '/sponsors/img3.jpeg',
-    '/sponsors/img4.jpeg', '/sponsors/img5.webp', '/sponsors/img6.png',
-    '/sponsors/img7.png'
+    '/images/sponsors/img1.png', '/images/sponsors/img2.jpeg', '/images/sponsors/img3.jpeg',
+    '/images/sponsors/img4.jpeg', '/images/sponsors/img5.webp', '/images/sponsors/img6.png',
+    '/images/sponsors/img7.png'
   ];
 
   const testimonials = [
@@ -27,21 +27,21 @@ export default function About() {
       id: 1,
       name: "Mr Philips",
       role: "Chairman",
-      image: "/img145.jpeg",
+      image: "/images/img145.jpeg",
       text: "We are determined to make SIRIKWA a leading high quality dairy company that will improve the economic status of our farmers and welfare of our people in the country and beyond."
     },
     {
       id: 2,
       name: "Mr Christopher",
       role: "General Manager",
-      image: "/img121.jpeg",
+      image: "/images/img121.jpeg",
       text: "We aim to achieve operational excellence through cutting-edge technologies, continuous staff development, and customer-centric strategies focused on sustainability and empowerment."
     },
     {
       id: 3,
       name: "Mrs Naommy",
       role: "Treasurer",
-      image: "/img147.jpeg",
+      image: "/images/img147.jpeg",
       text: "Our market-driven approach ensures agile response to industry dynamics, enabling data-backed decisions that drive profitability and sustainable growth."
     }
   ];
@@ -50,7 +50,7 @@ export default function About() {
     <main className="relative">
       {/* Hero Section */}
       <section className="relative h-64 sm:h-80 md:h-96 bg-blue-50 flex items-center">
-        <div className="absolute inset-0 bg-[url('/img120.jpeg')] bg-cover bg-center blur-sm" />
+        <div className="absolute inset-0 bg-[url('/images/img120.jpeg')] bg-cover bg-center blur-sm" />
         <div className="container text-center relative z-10" data-aos="fade-up">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800 mb-3 sm:mb-4">
             About Sirikwa Dairies
@@ -67,7 +67,7 @@ export default function About() {
           <div className="grid lg:grid-cols-2 gap-8 md:gap-12 items-center">
             <div className="relative h-64 sm:h-80 md:h-96 rounded-xl overflow-hidden shadow-xl" data-aos="fade-right">
               <Image 
-                src="/img184.png" 
+                src="/images/img184.png" 
                 alt="History" 
                 fill 
                 className="object-cover"
@@ -122,7 +122,7 @@ export default function About() {
             </div>
             <div className="relative h-64 sm:h-80 md:h-96 rounded-xl overflow-hidden shadow-xl" data-aos="fade-left">
               <Image 
-                src="/img186.jpeg" 
+                src="/images/img186.jpeg" 
                 alt="Cooperative" 
                 fill 
                 className="object-cover"
@@ -165,7 +165,7 @@ export default function About() {
           <div className="grid lg:grid-cols-2 gap-8 md:gap-12 items-center">
             <div className="relative h-64 sm:h-80 md:h-96 rounded-xl overflow-hidden shadow-xl" data-aos="fade-right">
               <Image 
-                src="/img135.jpeg" 
+                src="/images/img135.jpeg" 
                 alt="Sustainability" 
                 fill 
                 className="object-cover"
@@ -313,7 +313,7 @@ export default function About() {
                                     className="mb-4"
                                   >
                                     <Image
-                                      src="/sirikwalogo.jpg"
+                                      src="/images/sirikwalogo.jpg"
                                       alt="Sirikwa Dairies Logo"
                                       width={192}
                                       height={80}

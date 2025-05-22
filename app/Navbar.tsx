@@ -33,7 +33,7 @@ export default function Navbar() {
             <div className="flex justify-between items-center h-20">
             <Link href="/" className="flex items-center gap-3">
                 <Image
-                src="/img146.png"
+                src="/images/img146.png"
                 alt="Sirikwa Dairies"
                 width={50}
                 height={50}

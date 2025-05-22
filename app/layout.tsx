@@ -10,8 +10,8 @@ export const metadata: Metadata = {
   title: 'Sirikwa Dairies',
   description: 'Farmer-owned dairy cooperative providing premium milk products',
   icons: {
-    icon: '/img146.png', // Main favicon
-    apple: '/apple-touch-icon.png', // Optional: for Apple devices
+    icon: '/images/img146.png', // Main favicon
+    apple: '/images/apple-touch-icon.png', // Optional: for Apple devices
   },
 };
 

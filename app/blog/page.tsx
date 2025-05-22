@@ -15,16 +15,16 @@ import { FaLeaf, FaTractor } from 'react-icons/fa';
 
     const audioPosts = [
         {
-        title: 'Sustainable Dairy Practices',
+        title: 'Why Sirikwa Dairies',
         date: 'March 20, 2024',
-        file: '/AUDIO1.mp3',
+        file: '/images/AUDIO1.mp3',
         category: 'Audio Report',
         duration: '1 min'
         },
         {
-        title: 'Modern Milk Preservation',
+        title: 'Audio Blog Post 2',
         date: 'March 25, 2024',
-        file: '/AUDIO2.mp3',
+        file: '/images/AUDIO2.mp3',
         category: 'Expert Interview',
         duration: '1 min'
         }
@@ -36,7 +36,7 @@ import { FaLeaf, FaTractor } from 'react-icons/fa';
         <section className="relative h-96 bg-gray-100 flex items-center">
             <div className="absolute inset-0">
             <Image
-                src="/img107.jpeg"
+                src="/images/img107.jpeg"
                 alt="Dairy Blog"
                 fill
                 className="object-cover opacity-50"
@@ -105,7 +105,7 @@ import { FaLeaf, FaTractor } from 'react-icons/fa';
                 <div className="text-center py-12" data-aos="fade-up">
                 <div className="max-w-md mx-auto mb-8">
                     <Image
-                    src="/img129.jpeg"
+                    src="/images/img129.jpeg"
                     alt="Coming Soon"
                     width={600}
                     height={400}
@@ -138,7 +138,7 @@ import { FaLeaf, FaTractor } from 'react-icons/fa';
                         className="mb-4"
                         >
                         <Image
-                            src="/sirikwalogo.jpg"
+                            src="/images/sirikwalogo.jpg"
                             alt="Sirikwa Dairies Logo"
                             width={192}
                             height={80}

@@ -47,7 +47,7 @@ export default function Contact() {
     <main>
       {/* Hero Section */}
       <section className="relative h-64 sm:h-80 md:h-96 bg-blue-50 flex items-center">
-        <div className="absolute inset-0 bg-[url('/img105.jpeg')] bg-cover bg-center blur-sm" />
+        <div className="absolute inset-0 bg-[url('/images/img105.jpeg')] bg-cover bg-center blur-sm" />
         <div className="container text-center relative z-10" data-aos="fade-up">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800 mb-3 sm:mb-4" data-aos="fade-up">Get in Touch</h1>
           <p className="text-gray-600" data-aos="fade-up">We are here to answer your dairy-related questions</p>
@@ -141,7 +141,7 @@ export default function Contact() {
                     className="mb-4"
                   >
                     <Image
-                      src="/sirikwalogo.jpg"
+                      src="/images/sirikwalogo.jpg"
                       alt="Sirikwa Dairies Logo"
                       width={192}
                       height={80}

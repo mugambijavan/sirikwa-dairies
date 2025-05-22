@@ -24,10 +24,10 @@ export default function Home() {
   }, []);
 
   const slides = [
-    '/img138.jpeg',
-    '/img140.jpg',
-    '/img120.jpeg',
-    '/img119.jpeg'
+    '/images/img138.jpeg',
+    '/images/img140.jpg',
+    '/images/img120.jpeg',
+    '/images/img119.jpeg'
   ];
 
   return (
@@ -61,7 +61,6 @@ export default function Home() {
           </Swiper>
         </div>
 
-        {/* Foreground Content */}
         {/* Foreground Content */}
   <div className="relative z-10 h-full flex items-center justify-center">
     <div className="container mx-auto px-4">
@@ -214,7 +213,7 @@ export default function Home() {
                   </div>
                   <div className="relative h-96" data-aos="fade-left">
                     <Image
-                      src="/img106.jpg"
+                      src="/images/img106.jpg"
                       alt="Dairy Products"
                       fill
                       className="object-cover rounded-xl"
@@ -249,7 +248,7 @@ export default function Home() {
                   </div>
                   <div className="relative h-96" data-aos="fade-left">
                     <Image
-                      src="/img112.jpeg"
+                      src="/images/img112.jpeg"
                       alt="Dairy Projects"
                       fill
                       className="object-cover rounded-xl"
@@ -286,7 +285,7 @@ export default function Home() {
                   </div>
                   <div className="relative h-96" data-aos="fade-left">
                     <Image
-                      src="/img159.jpeg"
+                      src="/images/img159.jpeg"
                       alt="Dairy Services"
                       fill
                       className="object-cover rounded-xl"
@@ -308,7 +307,7 @@ export default function Home() {
                   </div>
                   <div className="relative h-96" data-aos="fade-left">
                     <Image
-                      src="/img171.jpeg"
+                      src="/images/img171.jpeg"
                       alt="Marketing Profile"
                       fill
                       className="object-cover rounded-xl"
@@ -377,7 +376,7 @@ export default function Home() {
                               className="mb-4"
                             >
                               <Image
-                                src="/sirikwalogo.jpg"
+                                src="/images/sirikwalogo.jpg"
                                 alt="Sirikwa Dairies Logo"
                                 width={192}
                                 height={80}

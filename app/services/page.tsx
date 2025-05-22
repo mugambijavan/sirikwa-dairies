@@ -17,25 +17,25 @@ import { FaLeaf, FaTractor } from 'react-icons/fa';
         title: 'Dairy Core Services',
         icon: <Milk className="w-8 h-8 text-blue-600" />,
         items: ['Bulking & Chilling', 'Quality Milk Marketing', 'Daily Collection'],
-        image: '/img112.jpeg'
+        image: '/images/img112.jpeg'
         },
         {
         title: 'Agrovet & Financial',
         icon: <DollarSign className="w-8 h-8 text-green-600" />,
         items: ['Agrovet Supplies', 'Farmer Loans', 'Member Registration', 'Milk Payments'],
-        image: '/img104.jpeg'
+        image: '/images/img104.jpeg'
         },
         {
         title: 'Livestock Support',
         icon: <HeartPulse className="w-8 h-8 text-red-600" />,
         items: ['AI Services', 'Vet Services', 'Capacity Building', 'Mobilization'],
-        image: '/img134.jpeg'
+        image: '/images/img134.jpeg'
         },
         {
         title: 'Sustainable Solutions',
         icon: <Leaf className="w-8 h-8 text-emerald-600" />,
         items: ['Biogas Systems', 'Renewable Energy', 'Eco Packaging'],
-        image: '/img159.jpeg'
+        image: '/images/img159.jpeg'
         }
     ];
 
@@ -43,17 +43,17 @@ import { FaLeaf, FaTractor } from 'react-icons/fa';
         {
         category: 'Milk Products',
         items: ['Fresh Milk', 'Fermented Milk', 'Pasteurized Cream'],
-        image: '/img158.JPG'
+        image: '/images/img158.JPG'
         },
         {
         category: 'Agrovet Products',
         items: ['Animal Drugs', 'Fertilizers', 'Farming Tools'],
-        image: '/img180.jpeg'
+        image: '/images/img180.jpeg'
         },
         {
         category: 'Animal Feeds',
         items: ['Dairy Meal', 'Calf Feed', 'Mineral Supplements'],
-        image: '/img176.jpeg'
+        image: '/images/img176.jpeg'
         }
     ];
 
@@ -63,7 +63,7 @@ import { FaLeaf, FaTractor } from 'react-icons/fa';
         <section className="relative h-96 bg-gray-100 flex items-center">
             <div className="absolute inset-0">
             <Image
-                src="/img171.jpeg"
+                src="/images/img171.jpeg"
                 alt="Dairy Farm"
                 fill
                 className="object-cover opacity-50"
@@ -164,7 +164,7 @@ import { FaLeaf, FaTractor } from 'react-icons/fa';
             <div className="grid lg:grid-cols-2 gap-12 items-center">
                 <div className="relative h-96 rounded-xl overflow-hidden shadow-xl" data-aos="fade-right">
                 <Image
-                    src="/img117.jpg"
+                    src="/images/img117.jpg"
                     alt="Transport Services"
                     fill
                     className="object-cover"
@@ -201,7 +201,7 @@ import { FaLeaf, FaTractor } from 'react-icons/fa';
                   
                                 <div className="container mx-auto px-4">
                                   <div className="flex flex-col items-center">
-                                    {/* Logo with Animation */}
+                                    {/* Logo with Animation */}/images
                                     <motion.div
                                       initial={{ opacity: 0, y: 20 }}
                                       animate={{ opacity: 1, y: 0 }}
@@ -209,7 +209,7 @@ import { FaLeaf, FaTractor } from 'react-icons/fa';
                                       className="mb-4"
                                     >
                                       <Image
-                                        src="/sirikwalogo.jpg"
+                                        src="/images/sirikwalogo.jpg"
                                         alt="Sirikwa Dairies Logo"
                                         width={192}
                                         height={80}
