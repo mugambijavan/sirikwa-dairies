@@ -286,7 +286,7 @@ export default function Home() {
                   </div>
                   <div className="relative h-96" data-aos="fade-left">
                     <Image
-                      src="/img109.jpg"
+                      src="/img159.jpeg"
                       alt="Dairy Services"
                       fill
                       className="object-cover rounded-xl"

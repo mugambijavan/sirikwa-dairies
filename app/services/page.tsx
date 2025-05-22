@@ -4,6 +4,8 @@
     import AOS from 'aos';
     import 'aos/dist/aos.css';
     import { Truck, Leaf,  HeartPulse, DollarSign, Milk, CheckIcon } from 'lucide-react';
+import { motion } from 'framer-motion';
+import { FaLeaf, FaTractor } from 'react-icons/fa';
 
     export default function Services() {
     useEffect(() => {
@@ -15,25 +17,25 @@
         title: 'Dairy Core Services',
         icon: <Milk className="w-8 h-8 text-blue-600" />,
         items: ['Bulking & Chilling', 'Quality Milk Marketing', 'Daily Collection'],
-        image: '/img141.png'
+        image: '/img112.jpeg'
         },
         {
         title: 'Agrovet & Financial',
         icon: <DollarSign className="w-8 h-8 text-green-600" />,
         items: ['Agrovet Supplies', 'Farmer Loans', 'Member Registration', 'Milk Payments'],
-        image: '/img170.jpeg'
+        image: '/img104.jpeg'
         },
         {
         title: 'Livestock Support',
         icon: <HeartPulse className="w-8 h-8 text-red-600" />,
         items: ['AI Services', 'Vet Services', 'Capacity Building', 'Mobilization'],
-        image: '/img179.jpeg'
+        image: '/img134.jpeg'
         },
         {
         title: 'Sustainable Solutions',
         icon: <Leaf className="w-8 h-8 text-emerald-600" />,
         items: ['Biogas Systems', 'Renewable Energy', 'Eco Packaging'],
-        image: '/img171.jpeg'
+        image: '/img159.jpeg'
         }
     ];
 
@@ -41,17 +43,17 @@
         {
         category: 'Milk Products',
         items: ['Fresh Milk', 'Fermented Milk', 'Pasteurized Cream'],
-        image: '/img141.png'
+        image: '/img158.JPG'
         },
         {
         category: 'Agrovet Products',
         items: ['Animal Drugs', 'Fertilizers', 'Farming Tools'],
-        image: '/img170.jpeg'
+        image: '/img180.jpeg'
         },
         {
         category: 'Animal Feeds',
         items: ['Dairy Meal', 'Calf Feed', 'Mineral Supplements'],
-        image: '/img169.jpeg'
+        image: '/img176.jpeg'
         }
     ];
 
@@ -162,7 +164,7 @@
             <div className="grid lg:grid-cols-2 gap-12 items-center">
                 <div className="relative h-96 rounded-xl overflow-hidden shadow-xl" data-aos="fade-right">
                 <Image
-                    src="/img179.jpeg"
+                    src="/img117.jpg"
                     alt="Transport Services"
                     fill
                     className="object-cover"
@@ -189,6 +191,50 @@
             </div>
             </div>
         </section>
+         {/* Footer Section */}
+            <footer className="relative bg-[#ffffff] text-[#2c3e50] py-8 mt-12 border-t border-gray-200">
+                                {/* Background Icons */}
+                                <div className="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none">
+                                  <FaLeaf className="text-6xl absolute top-10 left-10" />
+                                  <FaTractor className="text-6xl absolute bottom-10 right-10" />
+                                </div>
+                  
+                                <div className="container mx-auto px-4">
+                                  <div className="flex flex-col items-center">
+                                    {/* Logo with Animation */}
+                                    <motion.div
+                                      initial={{ opacity: 0, y: 20 }}
+                                      animate={{ opacity: 1, y: 0 }}
+                                      transition={{ duration: 0.5 }}
+                                      className="mb-4"
+                                    >
+                                      <Image
+                                        src="/sirikwalogo.jpg"
+                                        alt="Sirikwa Dairies Logo"
+                                        width={192}
+                                        height={80}
+                                        className="object-contain"
+                                      />
+                                    </motion.div>
+                  
+                                    {/* Description */}
+                                    <p className="text-center text-sm mb-4" style={{ fontFamily: 'Open Sans, sans-serif' }}>
+                                      Empowering farmers with quality dairy solutions since 2010.
+                                    </p>
+                  
+                                    {/* Copyright */}
+                                    <p className="text-center text-sm" style={{ fontFamily: 'Open Sans, sans-serif' }}>
+                                      © {new Date().getFullYear()} Sirikwa Dairies & Gen PLC. All rights reserved.
+                                    </p>
+                                    <p className="text-center text-sm mt-2" style={{ fontFamily: 'Open Sans, sans-serif' }}>
+                                      Developed by{' '}
+                                      <a href="https://bhakitah.co.ke" target="_blank" rel="noopener" className="text-[#2c3e50] hover:text-[#8bc34a] transition">
+                                        BhakitahTech
+                                      </a>
+                                    </p>
+                                  </div>
+                                </div>
+                              </footer>
         </main>
     );
     }

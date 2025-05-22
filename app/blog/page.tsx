@@ -36,7 +36,7 @@ import { FaLeaf, FaTractor } from 'react-icons/fa';
         <section className="relative h-96 bg-gray-100 flex items-center">
             <div className="absolute inset-0">
             <Image
-                src="/img171.jpeg"
+                src="/img107.jpeg"
                 alt="Dairy Blog"
                 fill
                 className="object-cover opacity-50"

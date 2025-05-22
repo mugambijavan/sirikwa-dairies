@@ -15,9 +15,11 @@ export default function Contact() {
 
   return (
     <main>
-      <section className="bg-blue-50 py-16">
-        <div className="container text-center">
-          <h1 className="text-4xl font-bold mb-4" data-aos="fade-up">Get in Touch</h1>
+      {/* Hero Section */}
+      <section className="relative h-64 sm:h-80 md:h-96 bg-blue-50 flex items-center">
+        <div className="absolute inset-0 bg-[url('/img105.jpeg')] bg-cover bg-center blur-sm" />
+        <div className="container text-center relative z-10" data-aos="fade-up">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800 mb-3 sm:mb-4" data-aos="fade-up">Get in Touch</h1>
           <p className="text-gray-600" data-aos="fade-up">We are here to answer your dairy-related questions</p>
         </div>
       </section>
@@ -62,8 +64,8 @@ export default function Contact() {
                 <h2 className="text-2xl font-bold mb-4">Contact Information</h2>
                 <div className="space-y-3 text-gray-600">
                   <p>📍 Ziwa Town, Uasin Gishu County</p>
-                  <p>📞 +254 712 345 678</p>
-                  <p>📧 info@sirikwadairies.co.ke</p>
+                  <p>📞 +254 791 548 000</p> <p>📞+254 726 510 216</p>
+                  <p>📧 info@sirikwadairies.co.ke </p><p>📧 sirikwad@gmail.com</p>
                 </div>
               </div>
               
